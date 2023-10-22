@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-color: #ebe6e6;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .heading h1 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 30px;
+  } 
+  
+  .products {
+    width: 800px;
+  }
+  
+  .product{
+    display: flex;
+    margin-top: 5px;
+  }
+  form {
+    font-weight: bold;
+    width: 800px;
+    display: flex;
+  }
+  form input {
+    width: 269px;
+    border:  1px solid #ccc;
+    background-color: #ebe6e6;
+    height: 40px;
+    font-size: 18px;
+  }
+  form button {
+    width: 272px;
+    border:  1px solid #ccc;
+    background-color: #ebe6e6;
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+  }
+  .products-header {
+    background-color: blue;
+    font-weight: bold;
+    width:800px;
+    color: white;
+    width: 800px;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .box-image{
+    background-color: rgb(197, 8, 8);
+    width: 269px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+   
+  }
+  .box-image img {
+    color: white;
+    transform: translateY(40%);
+    width: 15PX;
+  }
+  .box-footer {
+    font-weight: bold;
+    justify-content: center;
+    width: 800px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    height: 50px;
+  }
+  .box-footer .total-price {
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  /* @media */
+  @media screen and (max-width: 768px) {
+    .products {
+      width: 100%;
+    }
+
+    .product {
+      flex-direction: column;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    form input,
+    form button {
+      width: 100%;
+    }
+
+    .box {
+      width: 100%;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+    }
+    .box-image {
+      width: 100%;
+    }
+    .box-footer{
+      width: 100%;
+    }
+    .total-price {
+      text-align: center;
+    }
+  }
+ 
